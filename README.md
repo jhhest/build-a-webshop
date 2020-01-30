@@ -1,10 +1,56 @@
-# Project assignment. 
+# Build a webshop.
 
-This project is an assignment i got from [Codaisseur](https://github.com/facebook/create-react-app). 
+## Project assignment.
 
-look at [ProjectAssignment.md](ProjectAssignment.md) for more info. 
+This project is an assignment i got from [Codaisseur](https://github.com/facebook/create-react-app).
+If you are interested in following a coding bootcamp to kickstart a job as a webdevloper in 10 weeks you can visit their [site](https://github.com/facebook/create-react-app).
 
-# Information from create-react-app. 
+### Learning Objectives
+
+Build a simple webshop using the following techniques.
+
+- Setting up Redux
+- Get the state of the Redux store adn using it in your component
+- Dispatching actions to the Redux store to change its state
+- Writing reusable actions (action creators - functions that return actions)
+- Using async actions (thunks)
+- If you refresh any page your app shouldn't crash (each component should be able - to fetch its own data)
+- (If resfreshing empties your shoppingcart that's fine)
+
+look at [ProjectAssignment.md](ProjectAssignment.md) for more detailed information.
+
+### Detailed project description
+
+The project should contain the following:
+
+- Displaying products to the user in various ways
+- Users can add products to their cart or remove products from their cart
+- Users can go to a checkout page that shows their total
+- Users can finalize their order by filling out a form with their personal - information
+- Users can search the webshop for a specific product
+
+I chose to make a webshop to sell second hand cars.
+
+## Requirements.
+
+### Tools.
+
+During the assignment i will be using the following tooling. Some of them i will give a brief description.
+
+- Visual studio code
+- React
+- Redux
+- Redux-thunk
+
+#### Setup Redux Store
+
+- store.js with redux-devtools & redux-thunk
+- a ./reducers folder with an index.js that combines all your reducers usinig - combineReducers()
+- At least 1 reducer with an initial state
+- Wrapping your app in the <Provider> component in index.js
+- npm start your app and check redux-devtools to see if you've got an initial - state
+
+# Information from create-react-app.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
