@@ -8,7 +8,7 @@ export class Categorie extends Component {
       return <p>Loading!</p>;
     } else {
       return (
-        <section>
+        <section className="categorie">
           {this.props.categories.map(element => (
             <CategorieItem
               imgUrl={element.imageUrl}

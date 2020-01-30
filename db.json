@@ -164,23 +164,23 @@
   "categories": [
     {
       "id": 1,
-      "name": "Category 1",
-      "imageUrl": "https://www.mercedes-benz.nl/passengercars/_jcr_content/image.MQ6.2.2x.20190809104017.png"
+      "name": "Alfa Romeo",
+      "imageUrl": "https://www.contentautogroep.nl/_cache/_public/2017-Alfa-Romeo-Giulia-Blue-1_cl83MjB4NDgwX2RfMV9wbmdfL19hc3NldC9fcHJpdmF0ZS9zbmlwcGV0LzIwMDQ_3c2fd3aa.png"
     },
     {
       "id": 2,
-      "name": "Category 2",
-      "imageUrl": "https://www.mercedes-benz.nl/passengercars/_jcr_content/image.MQ6.2.2x.20190809104017.png"
+      "name": "Aston Martin",
+      "imageUrl": "https://www.passionwithoutlimits.com/wp-content/uploads/2017/01/astin-martin-shadow.png"
     },
     {
       "id": 3,
-      "name": "Category 3",
-      "imageUrl": "https://www.mercedes-benz.nl/passengercars/_jcr_content/image.MQ6.2.2x.20190809104017.png"
+      "name": "Audi",
+      "imageUrl": "https://mediaservice.audi.com/media/live/50900/fly1400x601n8/gea/2020.png?wid=550"
     },
     {
       "id": 4,
-      "name": "Category 4",
-      "imageUrl": "https://www.mercedes-benz.nl/passengercars/_jcr_content/image.MQ6.2.2x.20190809104017.png"
+      "name": "Triumph",
+      "imageUrl": "https://i0.wp.com/freepngimages.com/wp-content/uploads/2015/10/Triumph-Herald-classic-car.png?fit=623%2C248"
     }
   ]
 }

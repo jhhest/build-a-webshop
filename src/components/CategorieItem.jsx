@@ -8,6 +8,7 @@ export class CategorieItem extends Component {
         <img
           src={this.props.imgUrl}
           alt={"picture of categorie " + this.props.name}
+          style={{height: "12rem"}}
         />
         <h1>{this.props.name}</h1>
       </section>

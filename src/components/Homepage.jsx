@@ -3,6 +3,9 @@ import { connect } from "react-redux";
 
 import Navigation from "./Navigation";
 import Footer from "./Footer";
+
+import { categoriesFetched } from "../store/reducers/categories/actions";
+
 import Categorie from "./Categorie";
 import CategorieItem from "./CategorieItem";
 
@@ -11,11 +14,8 @@ class Homepage extends Component {
     fetch("http://localhost:4000/products")
       .then(res => res.json())
       .then(fetchedDataProducts => {
-          this.props.dispatch({
-              type: "products/FETCHED",
-              payload: fetchedDataProducts
-          })
-      })
+        this.props.dispatch(categoriesFetched(fetchedDataProducts));
+      });
 
     fetch("http://localhost:4000/categories")
       .then(res => res.json())
