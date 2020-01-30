@@ -1,13 +1,32 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
+import { connect } from "react-redux";
 
+import CategorieItem from "./CategorieItem";
 export class Categorie extends Component {
-    render() {
-        return (
-            <div>
-                Displaying the Categorie component.
-            </div>
-        )
+  render() {
+    if (!this.props.categories) {
+      return <p>Loading!</p>;
+    } else {
+      return (
+        <section>
+          {this.props.categories.map(element => (
+            <CategorieItem
+              imgUrl={element.imageUrl}
+              name={element.name}
+              key={element.id}
+            />
+          ))}
+        </section>
+      );
     }
+  }
 }
 
-export default Categorie
+function mapStateToProps(reduxState) {
+  // console.log("redux state?", reduxState);
+  return {
+    categories: reduxState.categories
+  };
+}
+// ...which is what we export as the default (only) export
+export default connect(mapStateToProps)(Categorie);

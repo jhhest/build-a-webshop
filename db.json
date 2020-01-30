@@ -164,19 +164,23 @@
   "categories": [
     {
       "id": 1,
-      "name": "Category 1"
+      "name": "Category 1",
+      "imageUrl": "https://www.mercedes-benz.nl/passengercars/_jcr_content/image.MQ6.2.2x.20190809104017.png"
     },
     {
       "id": 2,
-      "name": "Category 2"
+      "name": "Category 2",
+      "imageUrl": "https://www.mercedes-benz.nl/passengercars/_jcr_content/image.MQ6.2.2x.20190809104017.png"
     },
     {
       "id": 3,
-      "name": "Category 3"
+      "name": "Category 3",
+      "imageUrl": "https://www.mercedes-benz.nl/passengercars/_jcr_content/image.MQ6.2.2x.20190809104017.png"
     },
     {
       "id": 4,
-      "name": "Category 4"
+      "name": "Category 4",
+      "imageUrl": "https://www.mercedes-benz.nl/passengercars/_jcr_content/image.MQ6.2.2x.20190809104017.png"
     }
   ]
 }

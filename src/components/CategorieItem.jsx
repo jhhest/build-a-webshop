@@ -1,13 +1,18 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export class CategorieItem extends Component {
-    render() {
-        return (
-            <div>
-                displaying the CategorieItem
-            </div>
-        )
-    }
+  render() {
+      console.log(this.props)
+    return (
+      <section className="categorieItem">
+        <img
+          src={this.props.imgUrl}
+          alt={"picture of categorie " + this.props.name}
+        />
+        <h1>{this.props.name}</h1>
+      </section>
+    );
+  }
 }
 
-export default CategorieItem
+export default CategorieItem;
