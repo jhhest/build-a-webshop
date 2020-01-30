@@ -5,6 +5,7 @@ import Navigation from "./Navigation";
 import Footer from "./Footer";
 
 import { categoriesFetched } from "../store/reducers/categories/actions";
+import { productsFetched} from "../store/reducers/products/actions";
 
 import Categorie from "./Categorie";
 import CategorieItem from "./CategorieItem";
@@ -14,16 +15,13 @@ class Homepage extends Component {
     fetch("http://localhost:4000/products")
       .then(res => res.json())
       .then(fetchedDataProducts => {
-        this.props.dispatch(categoriesFetched(fetchedDataProducts));
+        this.props.dispatch(productsFetched(fetchedDataProducts));
       });
 
     fetch("http://localhost:4000/categories")
       .then(res => res.json())
-      .then(data => {
-        this.props.dispatch({
-          type: "categories/FETCHED",
-          payload: data
-        });
+      .then(fetchedDataCategories => {
+        this.props.dispatch(categoriesFetched(fetchedDataCategories));
       });
   }
   render() {
