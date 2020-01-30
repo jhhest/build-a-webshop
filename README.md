@@ -1,3 +1,11 @@
+# Project assignment. 
+
+This project is an assignment i got from [Codaisseur](https://github.com/facebook/create-react-app). 
+
+look at [ProjectAssignment.md](ProjectAssignment.md) for more info. 
+
+# Information from create-react-app. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
