@@ -1,19 +1,13 @@
 import React, { Fragment } from "react";
 import "./App.css";
 
-import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
-import Categorie from "./components/Categorie";
-import CategorieItem from "./components/CategorieItem";
+import Homepage from "./components/Homepage";
 
 function App() {
   return (
     <Fragment>
       Start of App component
-      <Navigation />
-      <Categorie />
-      <CategorieItem />
-      <Footer />
+      <Homepage />
     </Fragment>
   );
 }

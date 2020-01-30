@@ -53,7 +53,8 @@ During the assignment i will be using the following tooling. Some of them i will
 - Redux-thunk
 
 #### Setup json-server for products
-We will use JSON-server for making api calls. 
+
+We will use JSON-server for making api calls.
 
 `npm install -D json-server`
 
@@ -239,19 +240,27 @@ We will use JSON-server for making api calls.
  "categories": [
      {
          "id": 1,
-         "name": "Category 1"
+         "name": "Alfa Romeo"
      },
      {
          "id": 2,
-         "name": "Category 2"
+         "name": "Aston Martin"
      },
      {
          "id": 3,
-         "name": "Category 3"
+         "name": "Audi"
      },
      {
          "id": 4,
-         "name": "Category 4"
+         "name": "Bentley"
+     },
+          {
+         "id": 4,
+         "name": "BMW"
+     },
+          {
+         "id": 4,
+         "name": "Chevrolet"
      }
  ]
 }
@@ -259,7 +268,11 @@ We will use JSON-server for making api calls.
 
 #### Setup Redux Store
 
-- store.js with redux-devtools & redux-thunk
+run:
+`npm install redux react-redux`
+
+- added a store.js with redux-devtools & redux-thunk
+- put the store in src/store. 
 - a ./reducers folder with an index.js that combines all your reducers usinig - combineReducers()
 - At least 1 reducer with an initial state
 - Wrapping your app in the <Provider> component in index.js
@@ -335,4 +348,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-````
+
+```
+
+```
