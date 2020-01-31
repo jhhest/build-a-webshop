@@ -3,17 +3,22 @@ import "./App.css";
 
 import Homepage from "./pages/Homepage";
 import Contact from "./pages/Contact";
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 
-import { BrowserRouter as Router } from "react-router-dom";
-import { Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
     <Fragment>
+      <Navigation />
       <Router>
-        <Route exact path="/" component={Homepage} />
-        <Route path="/contact" component={Contact} />
+        <Switch>
+          <Route exact path="/" component={Homepage} />
+          <Route path="/contact" component={Contact} />
+        </Switch>
       </Router>
+      <Footer />
     </Fragment>
   );
 }

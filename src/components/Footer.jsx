@@ -6,7 +6,9 @@ export class Footer extends Component {
             <footer>
                 Here comes the footer. 
                 <ul>
-                    <li>Contact details</li>
+                    <li>Footer mail details</li>
+                    <li>Footer Telephone Adress</li>
+                    <li>Footer adress details</li>
                 </ul>
             </footer>
         )

@@ -5,7 +5,7 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
 import { categoriesFetched } from "../store/reducers/categories/actions";
-import { productsFetched} from "../store/reducers/products/actions";
+import { productsFetched } from "../store/reducers/products/actions";
 
 import Categorie from "../components/Categorie";
 import CategorieItem from "../components/CategorieItem";
@@ -27,10 +27,7 @@ class Homepage extends Component {
   render() {
     return (
       <Fragment>
-        <Navigation />
         <Categorie />
-        <CategorieItem />
-        <Footer />
       </Fragment>
     );
   }
