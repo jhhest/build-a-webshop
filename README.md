@@ -51,6 +51,7 @@ During the assignment i will be using the following tooling. Some of them i will
 - React
 - Redux
 - Redux-thunk
+- React-router
 
 #### Setup json-server for products
 
@@ -272,11 +273,32 @@ run:
 `npm install redux react-redux`
 
 - added a store.js with redux-devtools & redux-thunk
-- put the store in src/store. 
+- put the store in src/store.
 - a ./reducers folder with an index.js that combines all your reducers usinig - combineReducers()
 - At least 1 reducer with an initial state
 - Wrapping your app in the <Provider> component in index.js
 - npm start your app and check redux-devtools to see if you've got an initial - state
+
+#### Setup React Router
+
+- Mount your app component in a Browser Router by adding the following import in index.js
+
+```javascript
+import { BrowserRouter as Router } from "react-router-dom";
+
+ReactDOM.render(
+  <Router>
+    <App />
+  </Router>,
+  document.getElementById("root")
+);
+```
+
+- Create a \_redirects file in the public directory. Add the following code in this file.
+  `/* /index.html 200`
+- import route component with following line: 
+`import { Route } from "react-router-dom";`
+
 
 # Information from create-react-app.
 

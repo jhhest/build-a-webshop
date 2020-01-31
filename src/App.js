@@ -1,13 +1,19 @@
 import React, { Fragment } from "react";
 import "./App.css";
 
-import Homepage from "./components/Homepage";
+import Homepage from "./pages/Homepage";
+import Contact from "./pages/Contact";
+
+import { BrowserRouter as Router } from "react-router-dom";
+import { Route } from "react-router-dom";
 
 function App() {
   return (
     <Fragment>
-      Start of App component
-      <Homepage />
+      <Router>
+        <Route exact path="/" component={Homepage} />
+        <Route path="/contact" component={Contact} />
+      </Router>
     </Fragment>
   );
 }

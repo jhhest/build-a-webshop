@@ -1,14 +1,14 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 
-import Navigation from "./Navigation";
-import Footer from "./Footer";
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 
 import { categoriesFetched } from "../store/reducers/categories/actions";
 import { productsFetched} from "../store/reducers/products/actions";
 
-import Categorie from "./Categorie";
-import CategorieItem from "./CategorieItem";
+import Categorie from "../components/Categorie";
+import CategorieItem from "../components/CategorieItem";
 
 class Homepage extends Component {
   componentDidMount() {
